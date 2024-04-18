@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento Avançado de um Catálogo de Livros</title>
+</head>
+<body>
+    
+    <script>
+        var titulo = "titulo";
+        var autor = "autor";
+        var ano = 2005;
+        var categorias = "categorias"
+
+        let livros = [
+            {
+                titulo:"A bela e a fera",
+                autor: "Lilian lispec",
+                ano: 200,
+                emprestado:true,
+                categorias: ["Fantasia","Romance"],
+                revisoes: [
+                    {
+                        comentarios: "Livro Incrível.",
+                        avaliacao: 8
+                    },
+                    {
+                        comentarios: "Achei bem chato.",
+                        avaliacao: 4
+                    }
+                ]
+
+            },
+            {
+                titulo:"Alice no país das maravilhas",
+                autor: "Jussara Homers",
+                ano: 190,
+                emprestado:false,
+                categorias: ["Literatura fantástica", "Literatura nonsense"],
+                revisoes: [
+                    {
+                        comentarios: "Meu livro favorito.",
+                        avaliacao: 10
+                    },
+                    {
+                        comentarios: "Muito sem sentido a narrativa, pessimmo",
+                        avaliacao: 3
+                    }
+                ]
+            },
+            {
+                titulo:"A bela e a fera",
+                autor: "Lilian lispec",
+                ano: 200,
+                emprestado:true,
+                categorias: ["Fantasia","Romance"],
+                revisoes: [
+                    {
+                        comentarios: "Livro Incrível.",
+                        avaliacao: 8
+                    },
+                    {
+                        comentarios: "Achei bem chato.",
+                        avaliacao: 4
+                    }
+                ]
+
+            },
+            {
+                titulo:"João e Maria",
+                autor: "Lucas pitanga",
+                ano: 199,
+                emprestado:true,
+                categorias: ["Conto de fadas", "Literatura infantil"],
+                revisoes: [
+                    {
+                        comentarios: "Meu filho amou.",
+                        avaliacao: 7
+                    },
+                    {
+                        comentarios: "Gostei muito vale a pena",
+                        avaliacao: 8
+                    }
+                ]
+            }
+        ]
+
+            var livroEmprestado = "Não";
+            if(livros[0].emprestado){
+                livroemprestado ="Sim"
+            }
+
+
+        console.log(`
+         livro: ${livros[0].titulo},
+         autor: ${livros[0].autor},
+         ano: ${livros[0].ano},
+         emprestado: ${livros[0].emprestado ? 'sim': 'não'}, 
+         categorias: ${livros[0].categorias},
+         revisoes: ${livros[0].revisoes[0].avaliacao}`);
+
+        
+       
+
+    </script>
+
+
+
+</body>
+</html>

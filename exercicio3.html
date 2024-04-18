@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora de Descontos</title>
+</head>
+<body>
+    
+    <script>
+    function aplicaDesconto(preco, desconto) {
+       
+        var valorDesconto = preco * (desconto / 100);
+       
+        var precoFinal = preco - valorDesconto;
+      
+        return precoFinal;
+    }
+    
+   
+    var precoOriginal = 100; 
+    var percentualDesconto = 10;
+
+    console.log("Preço original: " + precoOriginal);
+    console.log("Preço com desconto: " + aplicaDesconto(precoOriginal, percentualDesconto));
+    console.log("Valor do desconto: " + (precoOriginal * (percentualDesconto / 100)));
+</script>
+
+</body>
+</html>
